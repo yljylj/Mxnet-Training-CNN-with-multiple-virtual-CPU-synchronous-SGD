@@ -32,8 +32,8 @@ if __name__ == '__main__':
     data.add_data_aug_args(parser)
     # use a large aug level
     data.set_data_aug_level(parser, 3)
-    train_fname = os.path.join("/THL5/software/mxnet/data","train_480_q90.rec")
-    val_fname = os.path.join("/THL5/software/mxnet/data","val_256_q90.rec")
+    train_fname = os.path.join("/home/data","train_480_q90.rec")
+    val_fname = os.path.join("/home/data","val_256_q90.rec")
     parser.set_defaults(
         # network
         network          = 'resnet',
