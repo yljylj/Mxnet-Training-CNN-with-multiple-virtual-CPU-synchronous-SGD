@@ -3,4 +3,4 @@ Devide the physical CPU to multiple virtual CPU, then doing a synchronous SGD. T
 
 For example, if the CPU has 28 cores, we can divide it into 4 groups each with 7 cores and do a synchronos SGD. We do experiments on INTEL XEON E5-2690 v4 CPU, which can gain an 1.5x speed up when training both Resnet and Mobilenet.
 
-To run this, you need to cover original file on Mxnet.
+To run this, you need to cover original file on Mxnet. Read the bash 'run.sh' for more information. Total speed is the sum of all workers' speed.
