@@ -197,7 +197,6 @@ def _update_params(param_arrays, grad_arrays, work_id, updater, num_device,
         if grad_list[0] is None:
             continue
         index = i
-        grad_list[0].copyto(nd[i])
         updater(index*num_device, nd[i], arg_list[0])
 
     sync[work_id + 4] += 1
